@@ -1,0 +1,117 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: rgba(238, 236, 233, 0.423);
+}
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
+  body {
+    background-color: #f8f9fa;
+}
+
+.form-container {
+        max-width: 500px; /* Thay đổi độ rộng tối đa của form */
+        margin: 41px auto;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #080706; /* Màu chữ */
+  font-family: 'Roboto', sans-serif; /* Kiểu chữ */
+  font-size: 30px; /* Kích thước chữ */
+  font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-group button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+/* date */
+.form-group input[type="date"] {
+  margin-top: 2%;
+  width: 41%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
