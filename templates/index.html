@@ -110,9 +110,10 @@
                   }, 3000);
                 },
                 error: function(xhr, status, error) {
-                    setTimeout(function() {
-                    $('#processing-msg').hide();
-                    $('#error-msg').show();
+                  $('#processing-msg').hide();
+                  $('#error-msg').show();  
+                  setTimeout(function() {
+                    $('#error-msg').hide();
                   }, 3000);
                 }
               });
