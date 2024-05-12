@@ -40,14 +40,13 @@ def url_create_search(offense_id,event_count, condition, start, stop):
     return result.get('search_id')
 
 def url_result_search(id):
-    url_result_search = f"https://{qr_db()[6]}/api/ariel/searches/{id}/results"
-    while True:
+    for i in range(5,-1,-1):
+        url_result_search = f"https://{qr_db()[6]}/api/ariel/searches/{id}/results"
         result, status_code = do_request_status('GET', url_result_search, header(qr_db()[0]))
-        time.sleep(0.5)
+        time.sleep(1)
         if status_code == 200:
-            break
-    print(result)
-    return result.get('events')
+            print(result)
+            return result.get('events')
 
 def url_delete_search(id):
     url_delete_search = f"https://{qr_db()[6]}/api/ariel/searches/{id}"
