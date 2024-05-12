@@ -41,9 +41,9 @@ def url_create_search(offense_id,event_count, condition, start, stop):
 
 def url_result_search(id):
     for i in range(5,-1,-1):
+        time.sleep(1)
         url_result_search = f"https://{qr_db()[6]}/api/ariel/searches/{id}/results"
         result, status_code = do_request_status('GET', url_result_search, header(qr_db()[0]))
-        time.sleep(1)
         if status_code == 200:
             print(result)
             return result.get('events')
